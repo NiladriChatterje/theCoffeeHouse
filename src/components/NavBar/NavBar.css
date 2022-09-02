@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    width: 5vw;
+    position: fixed;
+    transition: all;
+    transition-duration: 100ms;
+    box-shadow: -30px 15px 42px 1px rgb(64, 30, 0);
+    height:10vh;
+    overflow: hidden;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(163, 86, 8);
+}
+
+@media all and (max-width:800px){
+    .navbar{
+      height: 60px;
+  
+    }
+  }
