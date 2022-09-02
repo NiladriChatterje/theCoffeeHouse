@@ -23,6 +23,7 @@ function reload(){
   
   setTimeout(()=>{
     resize();
+    document.getElementById('logo').style.opacity='1';
   },1000);
   
   },2000);
