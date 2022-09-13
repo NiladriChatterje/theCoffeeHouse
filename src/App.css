@@ -1,5 +1,21 @@
 .App{
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     width: 100vw;
-    height:100vh;
+    height:70vh;
+    margin-top: 30vh;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+}
+*::-webkit-scrollbar{
+    width:10px;
+
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgb(121, 60, 16);
+    border-radius: 50px;
 }
