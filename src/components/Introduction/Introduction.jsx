@@ -13,7 +13,7 @@ function resize(){
 
 
 function reload(){
-  document.getElementById('right-brown-side').style.transform='translate(-100%,0)';
+ setTimeout(()=>{document.getElementById('right-brown-side').style.transform='translate(-100%,0)'},1000);
   
   setTimeout(()=>{
     Array.from(document.getElementsByClassName('container'))[0].style.borderRadius = '50%';
@@ -24,9 +24,9 @@ function reload(){
   setTimeout(()=>{
     resize();
     document.getElementById('logo').style.opacity='1';
-  },1000);
-  
   },2000);
+  
+  },3000);
 }
 
 const Introduction = () => {

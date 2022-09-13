@@ -5,7 +5,7 @@
     position: fixed;
     transition: all;
     transition-duration: 100ms;
-    box-shadow: -30px 15px 42px 1px rgb(64, 30, 0);
+    box-shadow: -10px 10px 15px 1px rgb(64, 30, 0);
     height:10vh;
     overflow: hidden;
     border-top-right-radius: 30px;
@@ -45,7 +45,10 @@
   color: rgb(173, 87, 0);
   background-color:white;
 }
-
+.link{
+  text-decoration: none;
+  color: inherit;
+}
 @media all and (max-width:800px){
     .navbar{
       height: 60px;

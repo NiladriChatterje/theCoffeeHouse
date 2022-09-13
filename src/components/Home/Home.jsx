@@ -1,16 +1,20 @@
 import React from 'react'
 import './Home.css';
 import NavBar from '../NavBar/NavBar';
-import Coffee_Img from '../../coffee-bg.png';
 
 const Home = () => {
   return (
+    <>
+    <div id='logo'>
+        </div>
       <div className='home-container'>
-      <NavBar />
-      <div id='logo'>
+        <NavBar />
+        
+        <div>
+
+        </div>
       </div>
-      
-      </div>
+    </>
     
   )
 }
