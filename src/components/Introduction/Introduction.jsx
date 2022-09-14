@@ -38,11 +38,7 @@ const Introduction = () => {
     window.onload=reload();    
   },[]);
 
-  React.useEffect(()=>{
-    window.addEventListener('resize',resize);
-
-    return ()=>window.removeEventListener('resize',resize);
-  })
+  
 
 
 
