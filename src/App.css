@@ -2,10 +2,9 @@
     overflow-x: hidden;
     overflow-y: scroll;
     width: 100vw;
-    height:70vh;
-    margin-top: 30vh;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
+    height:80vh;
+    margin-top: 20vh;
+    
 }
 *::-webkit-scrollbar{
     width:10px;

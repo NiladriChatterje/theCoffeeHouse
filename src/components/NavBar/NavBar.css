@@ -5,12 +5,12 @@
     position: fixed;
     transition: all;
     transition-duration: 100ms;
-    box-shadow: -10px 10px 15px 1px rgb(64, 30, 0);
+    box-shadow: -10px 8px 5px -3px rgb(64, 30, 0);
     height:10vh;
     overflow: hidden;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    background-color: rgb(163, 86, 8);
+    background-color: rgb(117, 58, 0);
 }
 .navbar_items{
   display: flex;
@@ -18,45 +18,44 @@
   width: 70vw;
   
 }
-.navbar_items > li > div{
-  position: relative;
-  width:10px;
-  border-radius: 50%;
-  height: 10px;
-  z-index: -3;
-  background-color: rgb(255, 255, 255);
-}
+
 
 .navbar_items > li{
   cursor: pointer;
   display: flex;
-  box-shadow: 0 2px 15px -2px rgb(83, 34, 2);
   align-items: center;
   overflow: hidden;
   list-style: none;
-  border: 3px solid white;
   border-radius: 10px;
   color:white;
-  max-height: 25px;
+  max-height: fit-content;
   font-weight: 900;
+  font-size: 0.8em;
   padding: 5px 15px;
 }
 .navbar_items>li:hover{
   color: rgb(173, 87, 0);
   background-color:white;
 }
+.link > #lord-icon{
+  background-color: white;
+  border-radius: 50% ;
+}
 .link{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
   text-decoration: none;
   color: inherit;
 }
 @media all and (max-width:800px){
     .navbar{
-      height: 60px;
+      height: 70px;
   
     }
-    .navbar_items > li > div{
-      width: 5px;
-      height: 5px;
+    .navbar_items > li{
+      width: max-content;
+      height: fit-content;
     }
     .navbar_items{
       width:75vw;
