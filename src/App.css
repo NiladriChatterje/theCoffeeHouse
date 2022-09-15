@@ -18,3 +18,118 @@
     background-color: rgb(121, 60, 16);
     border-radius: 50px;
 }
+:root{
+    --x:1;
+    --y:0;
+    --a:-50%;
+    --mouseY:-50%;
+    --mouseX:-50%;
+    
+}
+#logo-title{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,var(--a)) scale(var(--y),var(--y));
+}
+#logo img{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    transition: ease-in;
+    transition-duration:100ms ;
+    
+    
+}
+
+#logo{
+    transition: all;
+    transition-duration: 10ms;
+    width: 25vw;
+    height: 25vw;
+    background-image: url('./coffee.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 60%;
+    position: fixed;
+    padding: 20px;
+    top: 50%;
+    z-index: 1;
+    left: 50%;
+    transform:translate(-50%,-40%) scale(var(--x),var(--x));
+    transition: ease-out;
+    transition-duration: 50ms;
+    opacity: 0;
+   
+}
+#logo-title{
+    text-align: center;
+    font-size:4em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 60%;
+    left:50%;
+}
+
+#p1{
+
+    top: 10%;
+    left:35%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-45deg);
+    
+}
+#p2{
+
+    top: -20%;
+    left:50%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-30deg);
+    
+}
+#p3{
+
+    top: 0%;
+    right:35%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-5deg);
+    
+}
+#p4{
+
+    top: 50%;
+    right:-40%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(70deg);
+    
+}
+#p5{
+
+    top: 65%;
+    left:0%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-75deg);
+    
+}
+
+#p6{
+
+    top: 55%;
+    left:-10%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(5deg) scale(var(--x),var(--x));
+    
+}
+
+@media all and (max-width:800){
+    #logo{
+        width: 55vw;
+        height: 55vw;
+    } 
+    
+    #logo-title{
+        text-align: center;
+        font-size:4em;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        top: 60%;
+        left:50%;
+    }
+}

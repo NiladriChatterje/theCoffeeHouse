@@ -8,6 +8,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(circle,rgb(255, 255, 255),rgb(191, 89, 11));
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+#bg1{
+  width: 100vw;
+  height:100vh;
+  position: fixed;
+  z-index: -1;
   background-image: url('./bg.png');
   background-position-x: right;
   background-repeat: no-repeat;
@@ -29,9 +39,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media all and (max-width:800px){
-  body{
-    background-size: 90%;
-
+@media all and (max-width:1200px){
+  
+  #bg1{
+    background-size: 80%;
   }
 }

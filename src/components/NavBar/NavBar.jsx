@@ -11,13 +11,31 @@ src:"https://cdn.lordicon.com/nocovwne.json"},
 src: "https://cdn.lordicon.com/vixtkkbk.json"},
 {name:'Contact',
 src:"https://cdn.lordicon.com/zpxybbhl.json"}];
+
+function resize(){
+  if(window.innerWidth < 800){
+    Array.from(document.getElementsByClassName('navbar'))[0].style.width = '85vw';
+  }
+  else{
+    Array.from(document.getElementsByClassName('navbar'))[0].style.width = '75vw';
+  }
+}
+
 const NavBar = () => {
+
+  React.useEffect(()=>{setTimeout(()=>{
+    window.addEventListener('resize',resize);
+  },4000);
+    return window.removeEventListener('resize',resize);
+  })
+
   return (
-    <div className='navbar'>
+    <div className='navbar' >
       <div>
         <ul className='navbar_items'>
-        {navbar_items?.map((item,i)=>(
-            <li key={i}>  
+        {navbar_items?.map((item,i)=>{
+          if(item.name === 'Home')
+           return <li key={i}>  
             <Link to={`/`}
           className='link'> 
           <lord-icon id='lord-icon'
@@ -28,7 +46,20 @@ const NavBar = () => {
     </lord-icon>       
           {item.name} </Link>
         </li>
-        )
+
+        else
+        return <li key={i}>  
+        <Link to={`/${item.name}`}
+      className='link'> 
+      <lord-icon id='lord-icon'
+src={item.src}
+trigger="hover"
+colors="primary:#121331,secondary:#913710"
+style={{width:'28px',height:'28px'}}>
+</lord-icon>       
+      {item.name} </Link>
+    </li>
+        }
        )}
        </ul>
       </div>
