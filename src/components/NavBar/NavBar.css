@@ -3,8 +3,8 @@
     width: 5vw;
     align-items: center;
     position: fixed;
-    transition: all;
-    transition-duration: 100ms;
+    transition:ease-in-out;
+    transition-duration: 300ms;
     box-shadow: -10px 8px 5px -3px rgb(64, 30, 0);
     height:10vh;
     overflow: hidden;
@@ -18,7 +18,6 @@
   width: 70vw;
   
 }
-
 
 .navbar_items > li{
   cursor: pointer;

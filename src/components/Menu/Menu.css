@@ -1,0 +1,66 @@
+.Menu-container{
+    height: fit-content;
+    display: flex;
+    row-gap: 20px;
+    flex-direction:column;
+    margin-top: 70vh;
+    border-radius: 10px;
+    padding: 20px 15px;
+    width:90vw;
+    color: white;
+    font-weight: 800;
+    background-color: rgb(156, 73, 4,0.8);
+    backdrop-filter: blur(4px);
+    margin-bottom: 30px;
+    transition: all;
+    transition-duration: 1000ms;
+    scroll-behavior: smooth;
+}
+.Quick-page-jumps{
+    transition: all;
+    transition-duration: 1000ms;
+    scroll-behavior: smooth;
+    position: relative;
+    width: 100%;
+    height:min-content;
+    top:-30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.Quick-page-jumps > span{
+    transition: all;
+    transition-duration: 200ms;
+    scroll-behavior: smooth;
+    font-weight: 600;
+    color:white;
+    border-radius: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 0px 8px;
+    box-shadow: 0 2px 15px -6px black;
+    background-color: rgb(157, 77, 40);
+}
+.Quick-page-jumps > span:hover{
+    color: rgb(135, 34, 34);
+    background-color: white;
+}
+.Menu-container > div{
+    transition: all;
+    transition-duration: 1000ms;
+    display: flex;
+    object-fit: contain;
+    justify-content: space-between ;
+}
+.Menu-container> span{
+    transition: all;
+    transition-duration: 1000ms;
+    font-size: 4.8em;
+    font-family: 'Coffee';   
+}
+.Menu-container > div > span{
+    max-width: 50%;
+    word-wrap: break-word;
+}

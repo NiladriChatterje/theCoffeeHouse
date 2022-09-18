@@ -1,0 +1,41 @@
+#p1{
+
+    top: 15%;
+    left:25%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-45deg);
+    
+}
+#p2{
+
+    top: -15%;
+    left:30%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-30deg);
+    
+}
+#p3{
+
+    top: -05%;
+    right:-40%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-5deg);
+    
+}
+#p4{
+    top: 35%;
+    right:-50%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(70deg);
+}
+#p5{
+
+    top: 65%;
+    left:20%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(-75deg);
+    
+}
+
+#p6{
+
+    top: 45%;
+    left:0%;
+    transform: translate(var(--mouseX),var(--mouseY)) rotate(5deg) scale(var(--x),var(--x));
+    
+}

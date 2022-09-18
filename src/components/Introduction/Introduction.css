@@ -10,34 +10,26 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    transition: all;
-    transition-duration: 200ms;
   }
-  *{
-    transition: all;
-    transition-duration: 300ms;
-  }
-  #Heading{
+  .Heading{
+    width: max-content;
+    height: min-content;
     position: fixed;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     top:60px;
-    left: -650px;
-    
-    
-    
-  }
-  h1{
-    transition: all;
-    transition-duration: 100ms;
+    left:10px;
     font-family: 'Coffee',sans-serif;
-    font-size: 4.5em;
+    font-size: 1em;
     font-weight: 900;
     background-color: antiquewhite;
     border-radius: 60px;
-    padding:10px;
-    transform: translateX(690px);
-    box-shadow: 0 5px 15px 1px black;
+    padding:2px 3px;
+    box-shadow: 0 5px 15px -8px black;
   }
+
   #right-brown-side{
     position: fixed;
     background-color: rgba(109, 45, 5, 0.82);

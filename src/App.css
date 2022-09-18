@@ -4,6 +4,15 @@
     width: 100vw;
     height:80vh;
     margin-top: 20vh;
+    display: flex;
+    justify-content: center; 
+}
+:root{
+    --x:1;
+    --y:0;
+    --a:-50%;
+    --mouseY:-50%;
+    --mouseX:-50%;
     
 }
 *::-webkit-scrollbar{
@@ -18,19 +27,21 @@
     background-color: rgb(121, 60, 16);
     border-radius: 50px;
 }
-:root{
-    --x:1;
-    --y:0;
-    --a:-50%;
-    --mouseY:-50%;
-    --mouseX:-50%;
-    
-}
+
 #logo-title{
+    width: min-content;
+    height: max-content;
     position: fixed;
     top: 50%;
     left:50%;
     transform: translate(-50%,var(--a)) scale(var(--y),var(--y));
+    font-family: 'Coffee',sans-serif;
+    font-size: 0.9em;
+    font-weight: 900;
+    background-color: antiquewhite;
+    border-radius: 60px;
+    padding:10px;
+    box-shadow: 0 5px 15px -8px black;
 }
 #logo img{
     width: 20%;
@@ -70,54 +81,11 @@
     display: flex;
     justify-content: center;
     top: 60%;
-    left:50%;
 }
 
-#p1{
 
-    top: 10%;
-    left:35%;
-    transform: translate(var(--mouseX),var(--mouseY)) rotate(-45deg);
-    
-}
-#p2{
 
-    top: -20%;
-    left:50%;
-    transform: translate(var(--mouseX),var(--mouseY)) rotate(-30deg);
-    
-}
-#p3{
-
-    top: 0%;
-    right:35%;
-    transform: translate(var(--mouseX),var(--mouseY)) rotate(-5deg);
-    
-}
-#p4{
-
-    top: 50%;
-    right:-40%;
-    transform: translate(var(--mouseX),var(--mouseY)) rotate(70deg);
-    
-}
-#p5{
-
-    top: 65%;
-    left:0%;
-    transform: translate(var(--mouseX),var(--mouseY)) rotate(-75deg);
-    
-}
-
-#p6{
-
-    top: 55%;
-    left:-10%;
-    transform: translate(var(--mouseX),var(--mouseY)) rotate(5deg) scale(var(--x),var(--x));
-    
-}
-
-@media all and (max-width:800){
+@media all and (max-width:1200){
     #logo{
         width: 55vw;
         height: 55vw;
@@ -125,11 +93,10 @@
     
     #logo-title{
         text-align: center;
-        font-size:4em;
+        font-size:3em;
         align-items: center;
         display: flex;
         justify-content: center;
         top: 60%;
-        left:50%;
     }
 }

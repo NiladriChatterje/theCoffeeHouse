@@ -1,0 +1,70 @@
+.contact-container{
+    height: fit-content;
+    display: flex;
+    row-gap: 20px;
+    flex-direction:column;
+    margin-top: 70vh;
+    border-radius: 10px;
+    padding: 20px 15px;
+    width:90vw;
+    color: white;
+    font-weight: 800;
+    background-color: rgb(156, 73, 4,0.8);
+    backdrop-filter: blur(4px);
+    margin-bottom: 30px;
+    transition: all;
+    transition-duration: 1000ms;
+}
+.social-media-apps{
+    display: flex;
+    position: relative;
+    object-fit: contain;
+    width: 90vw;
+    flex-direction: row-reverse;
+}
+.social-media-apps > span>img{
+    width:2vw;
+    margin:5px 15px;
+    height:2vw;
+}
+.social-media-apps > span{
+    display: flex;
+    
+}
+.social-media-apps > span>span{
+    font-size: 0.9em;
+    display: none;
+    align-items: center;
+    transition: all;
+    transition-duration: 100ms;
+    
+}
+
+.social-media-apps > span:hover{
+    cursor: pointer;
+    color:rgb(153, 64, 0);
+    background-color: white;
+    height:min-content;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: left;
+    border-radius: 15px;
+    width:10vw;
+   
+}
+
+@media all and (max-width:1200px){
+    .social-media-apps > span>img{
+        width:4vw;
+        margin:5px 15px;
+        height:4vw;
+    }  
+    .social-media-apps > span:hover{
+        
+        width:28vw;
+       
+    }
+    .social-media-apps > span>span{
+        font-size: 0.78em;}
+}
