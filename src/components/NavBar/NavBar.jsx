@@ -49,10 +49,10 @@ const NavBar = ({setRouteText}) => {
         </li>
           }
         else
-        return <li key={i}>  
+        return <li key={i} onClick={()=>setRouteText(item.name)}>  
         <Link to={`/${item.name}`}
       className='link' 
-      onClick={e=>setRouteText(item.name)}> 
+      > 
       <lord-icon id='lord-icon'
 src={item.src}
 trigger="hover"

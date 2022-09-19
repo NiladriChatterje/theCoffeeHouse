@@ -39,10 +39,11 @@ const App = () => {
 
 
     <div className="App"
-
       onScroll={()=>{ 
+        try{
         if(routeText === 'Home')     
-        scrollTopAppContainer();
+        {scrollTopAppContainer();}}
+        catch(e){}
       }}>
       <AnimatePresence>
      <Routes location={location} key={location.pathname}>

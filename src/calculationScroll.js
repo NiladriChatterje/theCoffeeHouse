@@ -46,7 +46,7 @@ let scrolltop = 0;
 let scalee = 0;
 
 const scrollTopAppContainer = () =>{
-const app =Array.from(document.getElementsByClassName('App'))[0];
+let app =Array.from(document.getElementsByClassName('App'))[0];
 console.log()
 
 if(app.scrollTop >= 100){
