@@ -22,108 +22,108 @@ export function Menu() {
             </div>
 
             <span id='Beverages'><u>Beverages</u></span>
-            {Beverages.map(item =>{
+            {Beverages.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Milkshakes'><u>MilkShakes</u></span>
-            {MilkShakes.map(item =>{
+            {MilkShakes.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Lassi'><u>Lassi</u></span>
-            {Lassi.map(item =>{
+            {Lassi.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Mocktails'><u>Mocktails</u></span>
-            {Mocktails.map(item =>{
+            {Mocktails.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Mojito'><u>Mojito</u></span>
-            {Mojito.map(item =>{
+            {Mojito.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={item.name}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Starters'><u>Starters</u></span>
-            {Starters.map(item =>{
+            {Starters.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Pasta'><u>Pasta</u></span>
-            {Pasta.map(item =>{
+            {Pasta.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='Burger'><u>Burger</u></span>
-            {Burger.map(item =>{
+            {Burger.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
             <span id='Sandwich'><u>Sandwich</u></span>
-            {sandwich.map(item =>{
+            {sandwich.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
             <span id='club-sandwich'><u>Club Sandwich</u></span>
-            {club_sandwich.map(item =>{
+            {club_sandwich.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
             <span id='Pizza'><u>Pizza</u></span>
-            {Pizza.map(item =>{
+            {Pizza.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>
                 );
             })}
              <span id='combo-offers'><u>combo Offers</u></span>
-            {combo_offers.map(item =>{
+            {combo_offers.map((item,i) =>{
                 return (
-                    <div>
+                    <div key={i}>
                         <span>{item.name}</span>
                         <span>{item.price}</span>
                     </div>

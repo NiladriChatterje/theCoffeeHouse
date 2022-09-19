@@ -16,13 +16,12 @@ import { AnimatePresence } from 'framer-motion';
 
 
 const App = () => {
-  const [routeText,setRouteText] = React.useState(()=>'Home')
   const location = useLocation();
 
   return (
     <>
     <Introduction />
-    <NavBar setRouteText={setRouteText} />
+    <NavBar />
     <div id='logo'
        onMouseMove={e =>{
         e.stopPropagation();
@@ -41,8 +40,7 @@ const App = () => {
     <div className="App"
       onScroll={()=>{ 
         try{
-        if(routeText === 'Home')     
-        {scrollTopAppContainer();}}
+        scrollTopAppContainer();}
         catch(e){}
       }}>
       <AnimatePresence>
