@@ -30,6 +30,9 @@ body {
 }
 *{
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  transition: all;
+  transition-duration: 300ms;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

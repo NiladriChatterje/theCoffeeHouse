@@ -40,6 +40,6 @@
     
 }
 .parallax{
-    width:2vw;
-    height:2vw;
+    transition: all;
+    transition-duration: 1s;
 }

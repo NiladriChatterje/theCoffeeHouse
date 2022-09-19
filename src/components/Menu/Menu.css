@@ -13,11 +13,13 @@
     backdrop-filter: blur(4px);
     margin-bottom: 30px;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    transition: ease-in;
+    transition-duration: 1000ms;
     
     
 }
 .Quick-page-jumps{
+    scroll-behavior: smooth;
     transition: ease-in;
     transition-duration: 1000ms;
     position: relative;
@@ -31,6 +33,7 @@
     row-gap: 10px;
 }
 .Quick-page-jumps > span{
+    scroll-behavior: smooth;
     transition: ease-in;
     transition-duration: 1000ms;
     scroll-behavior: smooth;
@@ -48,18 +51,31 @@
     background-color: white;
 }
 .Menu-container > div{
+    scroll-behavior: smooth;
+    transition: ease-in;
+    transition-duration: 1000ms;
     display: flex;
     object-fit: contain;
     justify-content: space-between ;
     
 }
 .Menu-container> span{
+    scroll-behavior: smooth;
     font-size: 4.8em;
     font-family: 'Coffee';   
     transition: ease-in;
     transition-duration: 1000ms;
 }
 .Menu-container > div > span{
+    scroll-behavior: smooth;
     max-width: 50%;
     word-wrap: break-word;
+}
+@media all and (max-width:800px){
+    .Menu-container{
+        scroll-behavior: smooth;
+    transition: ease-in;
+    transition-duration: 1000ms;
+        margin-top: 60vh;
+    }
 }
