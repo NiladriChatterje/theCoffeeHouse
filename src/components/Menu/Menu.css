@@ -14,8 +14,7 @@
     margin-bottom: 30px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    transition: ease-in;
-    transition-duration: 1000ms;
+    
     
 }
 .Quick-page-jumps{
@@ -32,6 +31,8 @@
     row-gap: 10px;
 }
 .Quick-page-jumps > span{
+    transition: ease-in;
+    transition-duration: 1000ms;
     scroll-behavior: smooth;
     font-weight: 600;
     color:white;
@@ -50,12 +51,13 @@
     display: flex;
     object-fit: contain;
     justify-content: space-between ;
-    transition: ease-in;
-    transition-duration: 1000ms;
+    
 }
 .Menu-container> span{
     font-size: 4.8em;
     font-family: 'Coffee';   
+    transition: ease-in;
+    transition-duration: 1000ms;
 }
 .Menu-container > div > span{
     max-width: 50%;
