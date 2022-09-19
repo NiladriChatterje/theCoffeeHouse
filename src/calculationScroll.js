@@ -56,10 +56,7 @@ else{
     document.getElementById('logo').style.zIndex = 1;
 }
 
-scrolltop = Array.from(document.getElementsByClassName('App'))[0].scrollTop;
-       console.log(scrolltop);
-
-       
+scrolltop = Array.from(document.getElementsByClassName('App'))[0].scrollTop;       
         scalee=scrolltop/app.clientHeight
 
        if(scalee < 1.25)

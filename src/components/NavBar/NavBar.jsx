@@ -21,7 +21,7 @@ function resize(){
   }
 }
 
-const NavBar = () => {
+const NavBar = ({setRouteText}) => {
 
   React.useEffect(()=>{setTimeout(()=>{
     window.addEventListener('resize',resize);
@@ -35,7 +35,8 @@ const NavBar = () => {
         <ul className='navbar_items'>
         {navbar_items?.map((item,i)=>{
           if(item.name === 'Home')
-           return <li key={i}>  
+          { setRouteText('Home')
+            return <li key={i}>  
             <Link to={`/`}
           className='link'> 
           <lord-icon id='lord-icon'
@@ -46,11 +47,12 @@ const NavBar = () => {
     </lord-icon>       
           {item.name} </Link>
         </li>
-
+          }
         else
         return <li key={i}>  
         <Link to={`/${item.name}`}
-      className='link'> 
+      className='link' 
+      onClick={e=>setRouteText(item.name)}> 
       <lord-icon id='lord-icon'
 src={item.src}
 trigger="hover"
