@@ -11,8 +11,6 @@
     --x:1;
     --y:0;
     --a:-50%;
-    --mouseY:-50%;
-    --mouseX:-50%;
     
 }
 *::-webkit-scrollbar{
@@ -54,7 +52,7 @@
 #logo{
     width: 25vw;
     height: 25vw;
-    background-image: url('./coffee.webp');
+    background-image: url('./coffee.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50%;

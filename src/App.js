@@ -8,8 +8,7 @@ import Contact from './components/Contact/Contact';
 import SingleBean from './components/SingleBean/SingleBean';
 import NavBar from './components/NavBar/NavBar';
 import { Route, Routes,useLocation } from 'react-router-dom';
-import {mouseMove,mouseLeave,touchMove,touchEnd,mouseEnter
-  ,scrollTopAppContainer,touchStart} 
+import {mouseMove,mouseLeave,scrollTopAppContainer} 
 from './calculationScroll';
 import { AnimatePresence } from 'framer-motion';
 
@@ -17,32 +16,18 @@ import { AnimatePresence } from 'framer-motion';
 
 
 const App = () => {
-  
   const location = useLocation();
-    
-
 
   return (
     <>
     <Introduction />
     <NavBar />
     <div id='logo'
-    onMouseEnter={e =>{
-      e.stopPropagation();
-      mouseEnter();
-    }}
        onMouseMove={e =>{
         e.stopPropagation();
         mouseMove(e);
       }}
-      onTouchStart={(e)=>{e.stopPropagation();
-                touchStart();}}
-      onTouchMove={e =>{
-        e.stopPropagation();
-        touchMove(e);
-      }}
       onMouseLeave={()=>mouseLeave()}
-      onTouchEnd={()=>touchEnd()}
       >
         <SingleBean />
        

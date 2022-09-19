@@ -1,12 +1,12 @@
 .home-container{
-    height: 100vh;
+    height: max-content;
     transition: all;
     transition-duration: 1000ms;
     display: flex;
     justify-content: center;
     row-gap: 20px;
     flex-direction:column;
-    margin-top: 75vh;
+    margin-top: 65vh;
     border-radius: 10px;
     padding: 20px 15px;
     width:90vw;
@@ -17,20 +17,95 @@
     margin-bottom: 30px;
 }
 .welcome{
-    transition: all;
-    transition-duration: 400ms;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     width:100%;
-    height:40vh;
-    visibility: hidden;
-    
+    height:max-content;
+    margin-bottom: 70vh;
+    display: flex;
+    justify-content: space-between;
 }
-
+.welcome{
+    color: rgb(129, 68, 12);
+}
+#welcome1>div{
+    width: 50%;
+    word-wrap: break-word;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+#welcome1>div>span:first-child{
+    font-size: 1.4em;
+}
+:root{
+    --burger-scrollY:50%;
+}
+#intro{
+    display: flex;
+    flex-direction:column ;
+    gap:10px;
+    justify-content: left;
+}
+#intro > span:first-child{
+    font-size: 1em;
+    font-weight: 700;
+}
+#intro > span:nth-child(2){
+    font-family: 'Coffee';
+    font-size: 3em;
+    font-weight: 900;
+}
+#welcome1 > img{
+    margin-top: 200px;
+    width:50%;
+    height:28vh;
+    object-fit: contain;
+    position: relative;
+    transform: translate(-30%,var(--burger-scrollY));
+}
+#welcome2 > img{
+    width:50%;
+    height:25vh;
+    right:-80%;
+    object-fit: contain;
+    position: relative;
+    transform: translate(-30%,var(--burger-scrollY));
+}
+#welcome3 >div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+#welcome3 >div:first-child > img{
+    width: 50%;
+    height:25vh;
+    object-fit: contain;
+    position: relative;
+}
+#welcome3 >div:first-child > img:nth-child(1){
+ transform: translate(30%,var(--burger-scrollY)) scale(02.0,02.0);
+}
+#welcome3 >div:first-child > img:nth-child(2){
+    transform: translate(90%,var(--burger-scrollY)) scale(0.8,0.8);
+}
+#welcome3 >div:first-child > img:nth-child(3){
+    transform: translate(190%,var(--burger-scrollY)) scale(1.75,1.75);
+}
 @media all and (max-width:1200px){
     .home-container{
         margin-top: 60vh;
+    }    
+    #welcome1>img{
+        height: 15vh;
+        margin-top: 0;
     }
-    
-    
+    #welcome1>div{
+        font-size: 1em;
+    }
+    #welcome2 > img{
+        height: 15vh;}
+        #welcome3 >div:first-child > img{
+            height: 13vh;
+        }
 }
