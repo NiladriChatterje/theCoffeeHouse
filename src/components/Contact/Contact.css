@@ -65,3 +65,9 @@
     .social-media-apps > span>span{
         font-size: 0.78em;}
 }
+
+@media all and (max-width:800px){
+    .contact-container{
+        margin-top: 60vh;
+    }
+}

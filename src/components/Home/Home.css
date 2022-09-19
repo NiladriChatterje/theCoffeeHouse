@@ -28,7 +28,9 @@
 }
 
 @media all and (max-width:1200px){
-    
+    .home-container{
+        margin-top: 60vh;
+    }
     
     
 }
