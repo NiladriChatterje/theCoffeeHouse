@@ -14,10 +14,13 @@
     margin-bottom: 30px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    transition: ease-in;
+    transition-duration: 1000ms;
     
 }
 .Quick-page-jumps{
-
+    transition: ease-in;
+    transition-duration: 1000ms;
     position: relative;
     width: 100%;
     height:min-content;
@@ -47,6 +50,8 @@
     display: flex;
     object-fit: contain;
     justify-content: space-between ;
+    transition: ease-in;
+    transition-duration: 1000ms;
 }
 .Menu-container> span{
     font-size: 4.8em;
