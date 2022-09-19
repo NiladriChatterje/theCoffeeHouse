@@ -13,13 +13,13 @@ from './calculationScroll';
 import { AnimatePresence } from 'framer-motion';
 
 
-let scrolltop = 0;
-let scalee = 0;
+
 
 const App = () => {
   
   const location = useLocation();
     
+
 
   return (
     <>
@@ -47,17 +47,7 @@ const App = () => {
 
     <div className="App"
 
-      onScroll={()=>{
-        scrolltop = Array.from(document.getElementsByClassName('App'))[0].scrollTop;
-       scalee=scrolltop/
-       Array.from(document.getElementsByClassName('App'))[0].clientHeight
-
-       if(scalee < 1.25)
-        document.getElementById('logo-title').style.setProperty('--y',scalee)
-        
-        document.getElementById('logo').style.setProperty('--x',
-      1/(1+scrolltop/50));
-      
+      onScroll={()=>{      
       scrollTopAppContainer();
       }}>
       <AnimatePresence>

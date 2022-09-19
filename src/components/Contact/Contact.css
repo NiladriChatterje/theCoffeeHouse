@@ -34,10 +34,7 @@
 .social-media-apps > span>span{
     font-size: 0.9em;
     display: none;
-    align-items: center;
-    transition: all;
-    transition-duration: 100ms;
-    
+    align-items: center;    
 }
 
 .social-media-apps > span:hover{

@@ -46,16 +46,12 @@
 #logo img{
     width: 20%;
     height: 20%;
-    position: relative;
-    transition: ease-in;
-    transition-duration:100ms ;
-    
-    
+    position: relative; 
+    transition: all;
+    transition-duration: 100ms;   
 }
 
 #logo{
-    transition: all;
-    transition-duration: 10ms;
     width: 25vw;
     height: 25vw;
     background-image: url('./coffee.webp');
@@ -69,8 +65,7 @@
     z-index: 1;
     left: 50%;
     transform:translate(-50%,-40%) scale(var(--x),var(--x));
-    transition: ease-out;
-    transition-duration: 50ms;
+    
     opacity: 0;
    
 }

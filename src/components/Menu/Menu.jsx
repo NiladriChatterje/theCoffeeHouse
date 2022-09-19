@@ -6,7 +6,7 @@ import {Beverages,sandwich,Pizza,combo_offers,
 
 const menuCategories =['Beverages','Sandwich','Pizza','combo-offers',
     'Pasta','club-sandwich','Burger','Mocktails',
-    'Mojito','Lassi','Starters','MilkShakes'];
+    'Mojito','Lassi','Starters','Milkshakes'];
 
 export function Menu() {
     return (

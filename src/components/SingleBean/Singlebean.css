@@ -39,3 +39,7 @@
     transform: translate(var(--mouseX),var(--mouseY)) rotate(5deg) scale(var(--x),var(--x));
     
 }
+.parallax{
+    width:2vw;
+    height:2vw;
+}
